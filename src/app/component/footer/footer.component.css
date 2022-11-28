@@ -1,0 +1,21 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color: plum;
+    justify-content: flex-end;
+    height: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    gap: 10px;
+}
+.footer_left{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+.footer_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+}

@@ -1,0 +1,29 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:86vh;
+    background-image: url("../../../assets/img/top-view-books-arrangement.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Con la ruta absoluta no funciona */
+    .content h1{
+        color: white;
+    }
+
+    .content_main_title{
+        margin-top: 10px;
+        background-color: rgb(0,0,0,0.5);
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 1px solid black;
+        border-radius: 20px;
+    }
