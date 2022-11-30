@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { RegistroComponent } from './pages/registro/registro.component';
+import { LibrosComponent } from './pages/libros/libros.component';
 
 //Rutas
 const routes: Routes = 
@@ -10,8 +11,8 @@ const routes: Routes =
   {path:"home", component: HomeComponent},
   {path:"formulario", component: RegistroComponent},
   {path:"perfil", component: PerfilComponent},
+  {path:"libros", component: LibrosComponent},
   {path: '',   redirectTo: '/home', pathMatch: 'full' }//Redirige la página directamente a home
-
 ];
 
 @NgModule({

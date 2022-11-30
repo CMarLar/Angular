@@ -14,6 +14,8 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { LibrosComponent } from './pages/libros/libros.component';
+import { IdCodePipe } from './pipes/id-code.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ToastrModule } from 'ngx-toastr';
     HomeComponent,
     FormularioRegistroComponent,
     RegistroComponent,
-    PerfilComponent
+    PerfilComponent,
+    LibrosComponent,
+    IdCodePipe
   ],
   imports: [
     BrowserModule,

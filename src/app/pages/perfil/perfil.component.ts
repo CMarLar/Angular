@@ -39,10 +39,10 @@ export class PerfilComponent {
     inputURL:string)
     {
       //BLOQUE para que no cambie a "" los inputs vacíos
-      if(inputName != ""){this.newUser.nombre = inputName}
-      if(inputSurname != ""){this.newUser.apellidos = inputSurname}
-      if(inputMail != ""){this.newUser.nombre = inputMail}
-      if(inputURL != ""){this.newUser.apellidos = inputURL}
+      if(inputName == ""){inputName = this.newUser.nombre}
+      if(inputSurname == ""){inputSurname = this.newUser.apellidos}
+      if(inputMail == ""){inputMail = this.newUser.nombre}
+      if(inputURL == ""){inputURL = this.newUser.url}
       //
 
       if(inputName == "" &&

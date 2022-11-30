@@ -1,5 +1,6 @@
 export class Usuario
 {
+    //Modo abreviado de clase cuando el constructor tiene como parámetros todos los atributos
     constructor(
         public id_usuario: number,
         public nombre: string,
