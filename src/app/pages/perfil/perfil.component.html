@@ -1,0 +1,34 @@
+<div class="content">
+    <div class="profile">
+    <div class="profile_left">
+        <div class="profile_pic">
+            <img [src] ="newUser.url">
+            <!-- Img size 300x300 -->
+        </div>
+        <div class="profile_full_name">
+            <h4>{{newUser.nombre}} {{newUser.apellidos}} {{newUser.correo}}</h4>
+        </div>
+        <div class="profile_details">
+            <span>Nombre: </span><span>{{newUser.nombre}}</span><br>
+            <span>Apellido: </span><span>{{newUser.apellidos}}</span><br>
+            <span>Correo: </span><span>{{newUser.correo}}</span><br>
+        </div>
+    </div>
+    <div class="profile_right">
+        <h2>Editar los datos</h2>
+        <div class="profile_form">
+            <input placeholder="Nombre" type="text" class="input" required="" #nameInput>
+            <input placeholder="Apellidos" type="text" class="input" required="" #surnameInput>
+            <input placeholder="Correo" type="text" class="input" required="" #emailInput>
+            <input placeholder="URL" type="text" class="input" required="" #urlInput>
+            <br><br>
+            <button (click)="modifyData(nameInput.value,surnameInput.value,emailInput.value,urlInput.value)"> Modificar </button>
+        </div>
+    </div>
+</div>
+
+<div [hidden] = "isHidden" class="{{hiddenStyle}}">
+    <p>{{message}}</p>
+</div>
+
+</div>
