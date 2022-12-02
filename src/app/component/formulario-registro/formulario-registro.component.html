@@ -2,42 +2,49 @@
 <div class="form_container">
   <br><br>
     <div class="group">
-        <input required="" type="text" class="input">
+        <input required="" type="text" class="input" #inputNombre>
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Name</label>
       </div>
       <br><br>
       <div class="group">
-        <input required="" type="text" class="input">
+        <input required="" type="text" class="input" #inputApellidos>
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Apellidos</label>
       </div>
       <br><br>
       <div class="group">
-        <input required="" type="email" class="input">
+        <input required="" type="email" class="input" #inputEmail>
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Email</label>
       </div>
       <br><br>
       <div class="group">
-        <input required="" type="password" class="input">
+        <input required="" type="password" class="input" #inputPassword>
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Contraseña</label>
       </div>
       <br><br>
       <div class="group">
-        <input required="" type="password" class="input">
+        <input required="" type="password" class="input" #inputConfirmPassword>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Repetir contraseña</label>
+      </div>
+      <br><br>
+      <div class="group">
+        <input required="" type="text" class="input" #inputUrl>
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Repetir contraseña</label>
       </div>
 <br><br>
 
-<button>
+<button (click)="registerUser(inputNombre.value,inputApellidos.value,inputEmail.value,inputPassword.value,inputConfirmPassword.value,inputUrl.value)">
     <div class="svg-wrapper-1">
       <div class="svg-wrapper">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">

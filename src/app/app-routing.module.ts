@@ -6,6 +6,7 @@ import { RegistroComponent } from './pages/registro/registro.component';
 import { LibrosComponent } from './pages/libros/libros.component';
 import { AddbookComponent } from './pages/addbook/addbook.component';
 import { UpdatebookComponent } from './pages/updatebook/updatebook.component';
+import { LoginComponent } from './pages/login/login.component';
 
 //Rutas
 const routes: Routes = 
@@ -17,6 +18,7 @@ const routes: Routes =
   {path: '',   redirectTo: '/home', pathMatch: 'full' },//Redirige la página directamente a home
   {path:"addbook", component:AddbookComponent},
   {path:"updatebook", component:UpdatebookComponent},
+  {path:"login", component:LoginComponent},
 ];
 
 @NgModule({

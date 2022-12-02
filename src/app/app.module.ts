@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,8 @@ import { LibrosComponent } from './pages/libros/libros.component';
 import { IdCodePipe } from './pipes/id-code.pipe';
 import { AddbookComponent } from './pages/addbook/addbook.component';
 import { UpdatebookComponent } from './pages/updatebook/updatebook.component';
+import { LoginComponent } from './pages/login/login.component';
+import { FormularioLoginComponent } from './component/formulario-login/formulario-login.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,9 @@ import { UpdatebookComponent } from './pages/updatebook/updatebook.component';
     LibrosComponent,
     IdCodePipe,
     AddbookComponent,
-    UpdatebookComponent
+    UpdatebookComponent,
+    LoginComponent,
+    FormularioLoginComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +45,7 @@ import { UpdatebookComponent } from './pages/updatebook/updatebook.component';
     CommonModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
