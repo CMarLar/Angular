@@ -16,6 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { LibrosComponent } from './pages/libros/libros.component';
 import { IdCodePipe } from './pipes/id-code.pipe';
+import { AddbookComponent } from './pages/addbook/addbook.component';
+import { UpdatebookComponent } from './pages/updatebook/updatebook.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { IdCodePipe } from './pipes/id-code.pipe';
     RegistroComponent,
     PerfilComponent,
     LibrosComponent,
-    IdCodePipe
+    IdCodePipe,
+    AddbookComponent,
+    UpdatebookComponent
   ],
   imports: [
     BrowserModule,

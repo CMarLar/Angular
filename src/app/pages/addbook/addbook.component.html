@@ -1,0 +1,38 @@
+<!-- <p>addbook works!</p> -->
+
+<div class="form">
+    <div class="form_body">
+    <div class="inputGroup">
+        <input type="text" required="" autocomplete="off" #inputTitle>
+        <label for="name">Título</label>
+    </div>
+    <div class="inputGroup">
+        <input type="text" required="" autocomplete="off" #inputType>
+        <label for="name">Tipo de libro</label>
+    </div>
+    <div class="inputGroup">
+        <input type="text" required="" autocomplete="off" #inputAuthor>
+        <label for="name">Autor</label>
+    </div>
+    <div class="inputGroup">
+        <input type="text" required="" autocomplete="off" #inputPrice>
+        <label for="name">Precio</label>
+    </div>
+    <div class="inputGroup">
+        <input type="text" required="" autocomplete="off" #inputCover>
+        <label for="name">Portada</label>
+    </div>
+    <div class="inputGroup">
+        <input type="text" required="" autocomplete="off" #inputBookId>
+        <label for="name">Id del libro</label>
+    </div>
+    <div class="inputGroup">
+        <input type="text" required="" autocomplete="off" #inputUserId>
+        <label for="name">Id del usuarios</label>
+    </div>
+</div>
+<div class="form_button">
+    <button (click)="addBook(inputTitle.value,inputType.value,inputAuthor.value,inputPrice.value,inputCover.value,inputBookId.value,inputUserId.value)">Añadir libro</button>
+
+</div>
+</div>
