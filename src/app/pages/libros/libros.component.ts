@@ -15,7 +15,7 @@ export class LibrosComponent {
 
 
   constructor(public libroService:BookServiceService){
-    this.libros = [];//Das valor de array vacío.
+    this.libros = this.libroService.getAll();//Das valor de array vacío.
     //Es la variable que utilizo para pintar y es la que tengo que modificar.
   
 
