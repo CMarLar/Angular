@@ -1,11 +1,11 @@
 export class Libro {
     constructor(
+        public id_libro:number,
+        public id_usuario:number,
         public titulo: string,
-        public tipoLibro: string,
+        public tipo: string,
         public autor: string,
         public precio: number,
-        public photo: string,
-        public id_libro: number = 0,//valor 0 por defecto. Los parámetros por defecto se ponen al final
-        public id_usuario: number = 0,
+        public foto: string,
     ){}
 }

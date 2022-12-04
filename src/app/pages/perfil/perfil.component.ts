@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Usuario } from 'src/app/models/usuario';
 //Import para toastr:
 import { ToastrService } from 'ngx-toastr';
+import { UsuarioService } from 'src/app/shared/usuario.service';
 
 
 @Component({
@@ -25,10 +26,14 @@ export class PerfilComponent {
   public hiddenStyle:string
 
   //Construimos un objeto dentro de la clase que es este mismo archivo (los componentes son componentes y clases a la vez):
-  constructor(private toastr: ToastrService){
-    this.newUser = new Usuario(1,"Manuel","Martín Pérez","manuel@martin.com","password123","")
+  constructor(public usuario:UsuarioService, private toastr: ToastrService){
+    console.log(this.usuario.usuario)
+    // this.newUser = new Usuario(1,"Manuel","Martín Pérez","manuel@martin.com","password123","")
+    this.newUser = this.usuario.usuario// igualo al usuario logueado.
+
+    //CADA VEZ QUE NECESITE ALGO DEL USUARIO LOGUEADO, DESDE SERVICE
     this.isHidden = true;
-    this.message = "Hola holita"
+    this.message = "Mensaje"
   }
 
     //función a la que llama el html
@@ -41,8 +46,8 @@ export class PerfilComponent {
       //BLOQUE para que no cambie a "" los inputs vacíos
       if(inputName == ""){inputName = this.newUser.nombre}
       if(inputSurname == ""){inputSurname = this.newUser.apellidos}
-      if(inputMail == ""){inputMail = this.newUser.nombre}
-      if(inputURL == ""){inputURL = this.newUser.url}
+      if(inputMail == ""){inputMail = this.newUser.correo}
+      if(inputURL == ""){inputURL = this.newUser.foto}
       //
 
       if(inputName == "" &&

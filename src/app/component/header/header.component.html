@@ -1,6 +1,5 @@
 <!-- <p>header works!</p> -->
-
-<div class="navbar">
+<div class="navbar" *ngIf="userService.logueado == true; else userIsNotLogged">
     <div class="navbar_left">
         <div class="navbar_logo">
             <a routerLink = "home"><img src="https://www.graphicsprings.com/filestorage/stencils/2f3bdb9733c4a68659dc2900a7595fea.png?width=50&height=50" alt="logo"></a>
@@ -9,13 +8,29 @@
             <h5>MyBooks</h5>
         </div>
     </div>
-    login
     <div class="navbar_links">
-        <div class="nlink"><a routerLink = "formulario">Formulario</a></div>
         <div class="nlink"><a routerLink = "perfil">Perfil</a></div>
         <div class="nlink"><a routerLink = "libros">Libros</a></div>
         <div class="nlink"><a routerLink = "addbook">Añadir libro</a></div>
         <div class="nlink"><a routerLink = "updatebook">Modificar libro</a></div>
-        <div class="nlink"><a routerLink = "login">Login</a></div>
     </div>
 </div>
+
+<ng-template #userIsNotLogged>
+    <div class="navbar">
+        <div class="navbar_left">
+            <div class="navbar_logo">
+                <a routerLink = "home"><img src="https://www.graphicsprings.com/filestorage/stencils/2f3bdb9733c4a68659dc2900a7595fea.png?width=50&height=50" alt="logo"></a>
+            </div>
+            <div class="navbar_text">
+                <h5>MyBooks</h5>
+            </div>
+        </div>
+        <div class="navbar_links">
+            <div class="nlink"><a routerLink = "home">Home</a></div>
+            <div class="nlink"><a routerLink = "formulario">Registro</a></div>
+            <div class="nlink"><a routerLink = "login">Login</a></div>
+        </div>
+    </div>
+
+</ng-template>

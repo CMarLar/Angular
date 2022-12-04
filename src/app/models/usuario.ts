@@ -7,16 +7,16 @@ export class Usuario
         public apellidos: string,
         public correo: string,
         public password: string,
-        public url: string){}
+        public foto: string){}
 
         //tipo de retorno tiene que ser void:
     public modifyUser(nombre:string,apellidos:string,
-                correo:string,url:string): void
+                correo:string,foto:string): void
     {
         this.nombre=nombre;
         this.apellidos=apellidos;
         this.correo=correo;
-        this.url=url
+        this.foto=foto
     }
 }
 

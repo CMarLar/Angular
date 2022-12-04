@@ -14,16 +14,18 @@
         <div class="book_cover">
             <div class="x">
                 <img src="../../../assets/img/equis.png" alt="" (click)="deleteBook(libro.id_libro)">
+                <!-- cambia esta función -->
             </div>
-            <img [src]="libro.photo" alt="" srcset="">
+            <img [src]="libro.foto" alt="" srcset="">
         </div>
         <div class="book_atributes">
             <h3>Title:</h3>
             <h2>{{libro.titulo}}</h2>
             <hr>
-            <p #idlibro_d>Id Libro: {{libro.id_libro | idCode}}</p>
+            <p #idlibro_d>Id Libro: {{libro.id_libro}} </p>
+            <!-- quito | idCode  -->
             <p>Id Usuario: {{libro.id_usuario}}</p>
-            <p>Tipo de libro: {{libro.tipoLibro}}</p>
+            <p>Tipo de libro: {{libro.tipo}}</p>
             <p>Autor: {{libro.autor}}</p>
             <p>Precio: {{libro.precio}}</p>
             <hr>

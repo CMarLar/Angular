@@ -15,7 +15,7 @@ export class UsuarioService {
 
   constructor(private http:HttpClient)
   {
-    this.logueado = false;
+    this.logueado = false;//puede que el problema esté en que el valor no se otorga cuando se declara
   }
 
   public register(usuario:Usuario){//endpoint registro

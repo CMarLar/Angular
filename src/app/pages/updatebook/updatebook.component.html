@@ -7,10 +7,6 @@
         <label for="name">Id del libro</label>
     </div><br>
     <div class="inputGroup">
-        <input type="text" required="" autocomplete="off" #inputUserId>
-        <label for="name">Id del usuario</label>
-    </div><br>
-    <div class="inputGroup">
         <input type="text" required="" autocomplete="off" #inputTitle>
         <label for="name">Título</label>
     </div>
@@ -34,6 +30,6 @@
 
 </div>
 <div class="form_button">
-    <button (click)="modifyBook(inputTitle.value,inputType.value,inputAuthor.value,inputPrice.value,inputCover.value,inputBookId.value,inputUserId.value)">Modificar Libro</button>
+    <button (click)="modifyBook(inputTitle.value,inputType.value,inputAuthor.value,inputPrice.value,inputCover.value,inputBookId.value)">Modificar Libro</button>
 </div>
 </div>
