@@ -15,7 +15,7 @@ const routes: Routes =
   {path:"formulario", component: RegistroComponent},
   {path:"perfil", component: PerfilComponent},
   {path:"libros", component: LibrosComponent},
-  {path: '',   redirectTo: '/home', pathMatch: 'full' },//Redirige la página directamente a home
+  {path: '',   redirectTo: '/login', pathMatch: 'full' },//Redirige la página directamente a home
   {path:"addbook", component:AddbookComponent},
   {path:"updatebook", component:UpdatebookComponent},
   {path:"login", component:LoginComponent},
