@@ -18,7 +18,7 @@ export class LibrosComponent {
   constructor(public libroService:BookServiceService, public usuarioService:UsuarioService){
     this.libros = [];//Das valor de array vacío.
     //Es la variable que utilizo para pintar y es la que tengo que modificar.
-  
+  this.searchBooks("")//para redirigir a todos los libros
 
   }
 
