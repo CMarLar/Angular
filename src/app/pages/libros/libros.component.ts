@@ -51,10 +51,10 @@ export class LibrosComponent {
 
   public deleteBook(inputBookId:number){
     
-    //SE VA POR LA RUTA DEL ELSE!!
     this.libroService.deleteOneBook(inputBookId).subscribe((data: any) =>{//data:any para poder hacer lo de abajo
       if(data.affectedRows > 0){
         console.log(data.affectedRows);//forma alternativa de mostrar parte interesante del data
+        this.searchBooks("")//para mostrar de nuevo todos los libros
       }else{
         console.log("El libro no existe");
       }
